@@ -12,6 +12,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'verde': '#00FF7F',
+        'azul': '#0A66C2',
       },
     },
   },
