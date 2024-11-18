@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Footer from "../components/Footer/footer";
+import Nav from "../components/Nav/nav";
 import "./globals.css";
-import Nav from "../components/Nav/nav"
-import Footer from "../components/Footer/footer"
 
 export const metadata: Metadata = {
   title: "Verde Vias",
@@ -15,6 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/images/logo.png" />
+      </head>
       <body>
         <Nav></Nav>
         {children}
