@@ -11,7 +11,7 @@
 
 - Jennifer Eduarda Vieira Daleffi (1TDSPF – RM557137)
 
-- Julia Vasconselos Oliveira (1TDSPF – RM558785)
+- Julia Vasconcelos Oliveira (1TDSPF – RM558785)
 
 - Leonardo Cadena de Sousa (1TDSPF – RM557528)
 

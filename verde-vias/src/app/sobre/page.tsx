@@ -4,7 +4,7 @@ export default function About() {
         <div className="h-screen flex items-center justify-center">
             <div className="mt-14 flex flex-col md:flex-row items-center justify-between text-center lg:justify-around">
                 <div className="text-center md:text-left ml-10 w-80">
-                    <h1 className="text-2xl font-extrabold">VerdeVias </h1>
+                    <h1 className="text-2xl font-extrabold">Verde<span className="text-verde">Vias</span> </h1>
                     <p className="mt-5">Um caminho para um mundo sustentável!</p>
                 </div>
                 <p className="w-[30%]">

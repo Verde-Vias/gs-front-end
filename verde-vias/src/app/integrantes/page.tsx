@@ -26,7 +26,7 @@ export default function Integrantes() {
             </div>
             <div className="mt-10 w-72 p-5 flex flex-col items-center gap-5 shadow-lg shadow-verde border-2 border-solid border-verde rounded-lg">
                 <div>
-                    <h1>Julia Vasconselos</h1>
+                    <h1>Julia Vasconcelos</h1>
                 </div>
                 <div className="flex gap-7">
                     <p>RM558785</p>
