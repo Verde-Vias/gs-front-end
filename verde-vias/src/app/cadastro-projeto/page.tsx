@@ -30,7 +30,7 @@ export default function CadastroProjeto() {
                         </div>
                     </div>
                     <Link href="/">
-                        <button className="text-black w-full h-[50px] bg-green-50 rounded-[10px] border border-black cursor-pointer shadow-md text-lg font-medium hover:transition-all hover:duration-300 hover:scale-105 hover:bg-verde">
+                        <button className="text-black w-full h-[50px] bg-white  rounded-[10px] border border-black cursor-pointer shadow-md text-lg font-medium hover:transition-all hover:duration-300 hover:scale-105 hover:bg-verde">
                             Cadastrar
                         </button>
                     </Link>
