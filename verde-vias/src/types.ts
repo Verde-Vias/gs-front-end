@@ -6,3 +6,10 @@ export type TipoProjeto = {
     status: string;
   };
   
+  export type TipoCarro = {
+    $idCarro: number,
+    idCarro: number;
+    marca: string;
+    modelo: string;
+    valor: number;
+  };  
