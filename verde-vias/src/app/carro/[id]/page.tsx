@@ -54,34 +54,34 @@ export default function EditarCarro({params}:{params:{id:number}}) {
   }
 
   return (
-    <div>
-        <h1>Editar Carros Sustentaveis</h1>
+    <div className="w-screen h-screen">
+        <h1 className="text-center py-8 mt-44 text-3xl">Editar Carros Sustentaveis</h1>
         
-        <div>
-            <form onSubmit={handleSubmit}>
-                <div>
-                  <label>id:</label>
+        <div className="w-screen h-[80vh] flex flex-col items-center justify-center" >
+            <form onSubmit={handleSubmit} className="max-w-[32rem] border-2 shadow-xl shadow-verde border-solid border-verde min-h-[35rem] flex flex-col items-center justify-center gap-4 rounded-lg">
+                <div className="mt-12 max-w-[28rem] flex items-center justify-center">
+                  <label className="text-lg px-1">id:</label>
                   <input type="number" name="id" value={carro.idCarro} placeholder="Digite o codigo do carro." required 
-                    onChange={(e)=> setCarro({...carro, idCarro: parseFloat(e.target.value)})}  min={0}
+                    onChange={(e)=> setCarro({...carro, idCarro: parseFloat(e.target.value)})}  min={0} className="border border-black rounded-sm py-1 px-2 w-52"
                   />
                 </div>
-                <div>
-                  <label>Marca:</label>
+                <div className="mt-12 max-w-[28rem] flex items-center justify-center">
+                  <label className="text-lg px-1">Marca:</label>
                   <input type="text" name="marca" value={carro.marca} placeholder="Digite a marca do carro." required
-                  onChange={(e)=> setCarro({...carro, marca: e.target.value})}  />
+                  onChange={(e)=> setCarro({...carro, marca: e.target.value})}  className="border border-black rounded-sm py-1 px-2 w-52"/>
                 </div>
-                <div>
-                  <label>Modelo:</label>
+                <div className="mt-12 max-w-[28rem] flex items-center justify-center">
+                  <label className="text-lg px-1">Modelo:</label>
                   <input type="text" name="modelo" value={carro.modelo} placeholder="Digite o modelo do carro." required
-                  onChange={(e)=> setCarro({...carro, modelo: e.target.value})} />
+                  onChange={(e)=> setCarro({...carro, modelo: e.target.value})} className="border border-black rounded-sm py-1 px-2 w-52"/>
                 </div>
-                <div>
-                <div>
-                  <label>Valor:</label>
+                <div className="mt-12 max-w-[28rem] flex items-center justify-center">
+                  <label className="text-lg px-1">Valor:</label>
                   <input type="number" name="valor" value={carro.valor} placeholder="Digite o valor do carro." required 
-                    onChange={(e)=> setCarro({...carro, valor: parseFloat(e.target.value)})}  min={0}
+                    onChange={(e)=> setCarro({...carro, valor: parseFloat(e.target.value)})}  min={0} className="border border-black rounded-sm py-1 px-2 w-52"
                   />
                 </div>
+                <div className=" bg-verde border-2 border-solid border-black hover:bg-white hover:text-black py-2 px-4 text-xl rounded-md transition duration-500">
                   <button type="submit">Alterar</button>
                 </div>
             </form>

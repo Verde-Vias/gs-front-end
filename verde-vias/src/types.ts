@@ -1,5 +1,5 @@
 export type TipoProjeto = {
-    $idProjeto: number,
+    $idProjeto: number;
     idProjeto: number;
     descricao: string;
     custo: number;
@@ -7,7 +7,7 @@ export type TipoProjeto = {
   };
   
   export type TipoCarro = {
-    $idCarro: number,
+    $idCarro: number;
     idCarro: number;
     marca: string;
     modelo: string;
