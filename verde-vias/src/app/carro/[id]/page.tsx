@@ -58,7 +58,7 @@ export default function EditarCarro({params}:{params:{id:number}}) {
         <h1 className="text-center py-8 mt-44 text-3xl">Editar Carros Sustentaveis</h1>
         
         <div className="w-screen h-[80vh] flex flex-col items-center justify-center" >
-            <form onSubmit={handleSubmit} className="max-w-[32rem] border-2 shadow-xl shadow-verde border-solid border-verde min-h-[35rem] flex flex-col items-center justify-center gap-4 rounded-lg">
+            <form onSubmit={handleSubmit} className="w-[32rem] border-2 shadow-xl shadow-verde border-solid border-verde min-h-[35rem] flex flex-col items-center justify-center gap-4 rounded-lg">
                 <div className="mt-12 max-w-[28rem] flex items-center justify-center">
                   <label className="text-lg px-1">id:</label>
                   <input type="number" name="id" value={carro.idCarro} placeholder="Digite o codigo do carro." required 
