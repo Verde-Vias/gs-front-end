@@ -1,12 +1,12 @@
 
 import Link from "next/link";
 
-export default function CadastroProjeto() {
+export default function Cadastro() {
     return (
         <main className="flex h-screen w-full items-center justify-center">
             <div className="flex flex-col items-center justify-center w-[95%] h-[93%] bg-black rounded-[20px] shadow-lg p-10">
                 <h1 className="text-4xl text-center mb-10 text-white">
-                    Cadastre seu projeto:
+                    Cadastre-se:
                 </h1>
                 <section className="flex flex-col gap-6 w-1/2">
                     <div className="flex flex-col gap-4">
@@ -17,6 +17,7 @@ export default function CadastroProjeto() {
                                 id="nome"
                                 name="nome"
                                 className="w-full px-3 py-2 border rounded bg-white text-black"
+                                placeholder="Digite seu nome:"
                             />
                         </div>
                         <div className="flex flex-col">
@@ -26,6 +27,7 @@ export default function CadastroProjeto() {
                                 id="telefone"
                                 name="telefone"
                                 className="w-full px-3 py-2 border rounded bg-white text-black"
+                                placeholder="Digite seu nome:"
                             />
                         </div>
                     </div>

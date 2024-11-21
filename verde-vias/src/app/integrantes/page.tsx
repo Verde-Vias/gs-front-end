@@ -7,8 +7,8 @@ import Link from "next/link"
 export default function Integrantes() {
     return(
         <div className="h-screen">
-        <div className="flex justify-around mt-20 flex-wrap">
-            <div className="mt-10 w-72 p-5 flex flex-col items-center gap-5 border-2 shadow-lg shadow-verde border-solid border-verde rounded-lg">
+        <div className="flex justify-around mt-28 flex-wrap">
+            <div className="mt-10 w-80 p-16 flex flex-col items-center gap-5 border-2 shadow-lg shadow-verde border-solid border-verde rounded-lg hover:scale-110 hover:duration-300">
                 <div>
                     <h1>Jennifer Daleffi</h1>
                 </div>
@@ -24,7 +24,7 @@ export default function Integrantes() {
                     <Link className="border-2 border-azul border-solid bg-azul text-white p-2 rounded-md hover:bg-transparent hover:text-azul transition duration-500" href="https://www.linkedin.com/in/jenniferdaleffi/">LinkedIn</Link>
                 </div>
             </div>
-            <div className="mt-10 w-72 p-5 flex flex-col items-center gap-5 shadow-lg shadow-verde border-2 border-solid border-verde rounded-lg">
+            <div className="mt-10 w-80 p-16 flex flex-col items-center gap-5 shadow-lg shadow-verde border-2 border-solid border-verde rounded-lg hover:scale-110 hover:duration-300">
                 <div>
                     <h1>Julia Vasconcelos</h1>
                 </div>
@@ -40,7 +40,7 @@ export default function Integrantes() {
                     <Link className="border-2 border-azul border-solid bg-azul text-white p-2 rounded-md hover:bg-transparent hover:text-azul transition duration-500" href="https://www.linkedin.com/in/julia-vasconcelos-6009a9285/">LinkedIn</Link>
                 </div>
             </div>
-            <div className="mt-10 w-72 p-5 flex flex-col items-center gap-5 shadow-lg shadow-verde border-2 border-solid border-verde rounded-lg">
+            <div className="mt-10 w-80 p-16 flex flex-col items-center gap-5 shadow-lg shadow-verde border-2 border-solid border-verde rounded-lg hover:scale-110 hover:duration-300">
                 <div>
                     <h1>Leonardo Cadena</h1>
                 </div>
