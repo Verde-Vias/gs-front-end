@@ -5,7 +5,11 @@
 ## Objetivos do Projeto  
 
 - **Reduzir a Pegada de Carbono**: Substituindo combustíveis fósseis por fontes de energia renováveis, como solar e elétrica.  
-- **Promover Mobilidade Consciente**: Melhorando a qualidade de vida nas cidades e incentivando deslocamentos ambientalmente responsáveis.  
+- **Promover Mobilidade Consciente**: Melhorando a qualidade de vida nas cidades e incentivando deslocamentos ambientalmente responsáveis.
+
+# LINK PITCH FRONT-END
+
+Aqui:
 
 # Integrantes: 
 
