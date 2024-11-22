@@ -15,7 +15,7 @@ verde-vias-pou91rpjt-cadenaszas-projects.vercel.app
 
 # LINK PITCH FRONT-END
 
-Aqui:
+Aqui: https://youtu.be/RkrVtcUjAFA?si=eNsi9gwiOF19j2Sl
 
 # Integrantes: 
 
