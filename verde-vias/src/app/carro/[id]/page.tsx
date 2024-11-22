@@ -9,7 +9,6 @@ export default function EditarCarro({params}:{params:{id:number}}) {
   const navigate = useRouter();
 
   const [carro, setCarro] = useState<TipoCarro>({
-    $idCarro: 0,
     idCarro: 0,
     marca: "",
     modelo: "",
@@ -39,7 +38,6 @@ export default function EditarCarro({params}:{params:{id:number}}) {
           const data = await response.json();
           alert("Carro atualizado com sucesso!");
           setCarro({
-            $idCarro: 0,
             idCarro: 0,
             marca: "",
             modelo: "",

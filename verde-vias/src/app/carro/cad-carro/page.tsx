@@ -9,7 +9,6 @@ export default function CadCarro() {
   const navigate = useRouter();
 
   const [carro, setCarro] = useState<TipoCarro>({
-    $idCarro: 0,
     idCarro: 0,
     marca: "",
     modelo: "",
@@ -30,7 +29,6 @@ export default function CadCarro() {
           const data = await response.json();
           alert("Carro cadastrado com sucesso!");
           setCarro({
-            $idCarro: 0,
             idCarro: 0,
             marca: "",
             modelo: "",

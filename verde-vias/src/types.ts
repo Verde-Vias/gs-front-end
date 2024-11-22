@@ -7,7 +7,6 @@ export type TipoProjeto = {
   };
   
   export type TipoCarro = {
-    $idCarro: number;
     idCarro: number;
     marca: string;
     modelo: string;

@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Integrantes() {
     return(
-        <div className="h-screen">
+        <div className="min-h-screen">
         <div className="flex justify-around mt-28 flex-wrap">
             <div className="mt-10 w-80 p-16 flex flex-col items-center gap-5 border-2 shadow-lg shadow-verde border-solid border-verde rounded-lg hover:scale-110 hover:duration-300">
                 <div>

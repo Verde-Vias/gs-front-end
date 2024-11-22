@@ -7,25 +7,23 @@ export default function Carro() {
   const [listaCarro, setlistaCarro] = useState<TipoCarro[]>([])
     
   const chamadaDaApi = async () => {
-    try {
-      const response = await fetch(
-        "http://localhost:8080/VerdeVias/rest/carro"
-      );
-      if (!response.ok) {
-        throw new Error("Falha ao buscar dados");
+      try {
+        const response = await fetch("http://localhost:8080/VerdeVias/rest/carro");
+        if (!response.ok) {
+          throw new Error("Falha ao buscar dados");
+        }
+        const dados: TipoCarro[] = await response.json();
+        setlistaCarro(dados);
+      } catch (error) {
+        console.error("Falha ao buscar os dados:", error);
       }
-      const dados: TipoCarro[] = await response.json();
-      setlistaCarro(dados);
-    } catch (error) {
-      console.error("Falha ao buscar os dados:", error);
     }
-  };
 
     useEffect(() => {
         chamadaDaApi();
     }, [])
 
-    const handleDelete = async (idCarro:string) =>{
+    const handleDelete = async (idCarro:number) =>{
         try {
             const response = await fetch(`http://localhost:8080/VerdeVias/rest/carro/${idCarro}`,{
                 method: 'DELETE',
@@ -55,14 +53,14 @@ export default function Carro() {
         </thead>
         <tbody>
             {listaCarro.map((c) => (
-                <tr key={c.$idCarro} className="hover:bg-verde">
+                <tr key={c.idCarro} className="hover:bg-verde">
                   <td className="py-2 px-4 border-b border-gray-200">{c.idCarro}</td>
                     <td className="py-2 px-4 border-b border-gray-200">{c.marca}</td>
                     <td className="py-2 px-4 border-b border-gray-200">{c.modelo}</td>
                     <td className="py-2 px-4 border-b border-gray-200">{c.valor}</td>
                     <td className="py-2 px-4 border-b border-gray-200">
                         <Link href={`/carro/${c.idCarro}`} className="text-blue-500 hover:underline">EDITAR</Link> | 
-                        <Link href="#" onClick={() => handleDelete(c.idCarro.toString())} className="text-red-500 hover:underline">EXCLUIR</Link>
+                        <Link href="#" onClick={() => handleDelete(c.idCarro)} className="text-red-500 hover:underline">EXCLUIR</Link>
                     </td>
                 </tr>
             ))}
